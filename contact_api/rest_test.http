@@ -1,0 +1,37 @@
+### SHOW ALL CONTACT
+
+GET http://127.0.0.1:8001/api/contacts/
+
+### Single Contact
+GET http://127.0.0.1:8001/api/contacts/3
+
+### Delete Single Contact
+DELETE http://127.0.0.1:8001/api/contacts/3
+
+
+
+### Put single contact
+PUT http://127.0.0.1:8001/api/contacts/3?_method=PUT
+Content-Type: application/json
+
+{
+    "firstName" : "Nealford",
+    "lastName" : "Sotes",
+    "email" : "test@test.com",
+    "jobTitle" : "CallBoy",
+    "city" : "Lapu-Lapu",
+    "country" : "Philippines"
+}
+### Add single contact
+POST http://127.0.0.1:8001/api/contacts
+Content-Type: application/json
+
+{
+     "firstName" : "test",
+    "lastName" : "test",
+    "email" : "test1@test.com",
+    "jobTitle" : "tes",
+    "city" : "test",
+    "country" : "test"
+}
+
